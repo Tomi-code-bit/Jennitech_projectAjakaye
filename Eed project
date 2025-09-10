@@ -1,0 +1,115 @@
+Comprehensive note on function in JavaScript with practical examples; 
+
+*What is a Function?* 
+
+A function is a small block of code that we can use many times.
+It helps us avoid repeating the same code again and again.
+
+Think of a function as a machine:
+
+You give it some input (parameters).
+
+It does some work.
+
+It can give back an output (return).
+
+
+ *How to Write a Function* 
+
+Example 1: Function without Parameters
+
+function sayHello() {
+  console.log("Hello, Welcome to JavaScript!");
+}
+
+// calling the function
+sayHello();
+
+Output
+
+Hello, Welcome to JavaScript!
+
+
+
+Example 2: Function with Parameters
+
+function addNumbers(a, b) {
+  console.log(a + b);
+}
+
+addNumbers(5, 3);  // 8
+addNumbers(10, 7); // 17
+
+
+
+Example 3: Function with Return
+
+function multiply(a, b) {
+  return a * b;
+}
+
+let result = multiply(6, 4);
+console.log(result); // 24
+
+
+
+Why Use Functions?
+
+1. To reuse code (write once, use many times).
+
+
+2. To organize code into smaller pieces.
+
+
+3. To make programs easier to read and understand.
+
+
+
+
+Practical Student Examples
+
+Example 4: Multiplication Table Function
+
+function printTable(number) {
+  for (let i = 1; i <= 12; i++) {
+    console.log(`${number} x ${i} = ${number * i}`);
+  }
+}
+
+printTable(6); // prints table of 6
+
+
+
+Example 5: Check Even or Odd
+
+function checkNumber(num) {
+  if (num % 2 === 0) {
+    console.log(num + " is Even");
+  } else {
+    console.log(num + " is Odd");
+  }
+}
+
+checkNumber(10); // 10 is Even
+checkNumber(7);  // 7 is Odd
+
+
+
+Example 6: Simple Calculator
+
+function calculator(a, b, operator) {
+  if (operator === "+") {
+    console.log(a + b);
+  } else if (operator === "-") {
+    console.log(a - b);
+  } else if (operator === "*") {
+    console.log(a * b);
+  } else if (operator === "/") {
+    console.log(a / b);
+  } else {
+    console.log("Invalid operator");
+  }
+}
+
+calculator(8, 4, "+"); // 12
+calculator(8, 4, "*"); // 32
